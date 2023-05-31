@@ -42,6 +42,11 @@ a{
     cursor: pointer;
     display: none;
 }
+img {
+    width: 20%;
+    height: auto;
+    margin-top: 1.5vh;
+}
 
 @media screen and (max-width: 768px) {
     .nav__toggler {

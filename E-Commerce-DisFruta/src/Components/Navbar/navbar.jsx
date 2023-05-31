@@ -10,18 +10,16 @@ function Navbar() {
     };
     return (
         <nav className="nav">
-            <div className="Logo">
-                <img src={Logo}/>
+            <div className="Logo" id="Logo">
             </div>
-            <a href="#" className="nav__brand">DisFruta</a>
             <ul className={active}>
                 <li className="nav__item"><a href="#" className="nav__link">Inicio</a></li>
                 <li className="nav__item"><a href="#" className="nav__link">Frutas</a></li>
                 <li className="nav__item"><a href="#" className="nav__link">Licuados</a></li>
                 <li className="nav__item"><a href="#" className="nav__link">Zumos</a></li>
                 <li className="nav__item"><a href="#" className="nav__link">Nosotros</a></li>
-                <li className="nav__item"><a href="#" className="nav__link">Carrito</a></li>
                 <li className="nav__item"><a href="#" className="nav__link">Contactanos</a></li>
+                <li className="nav__item"><a href="#" className="nav__link">Carrito</a></li>
             </ul>
             <div onClick={navToggle} className={toggleIcon}>
                 <div className="line1"></div>

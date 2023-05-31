@@ -1,6 +1,6 @@
 import React from 'react';
 import {  signOut } from "firebase/auth";
-import { FirebaseAuth } from '../firebase/config';
+import { FirebaseAuth } from '../../Firebase/config';
 import { useNavigate } from 'react-router-dom';
  
 const Home = () => {

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import {  createUserWithEmailAndPassword  } from 'firebase/auth';
-import { FirebaseAuth } from '../firebase/config';
+import { FirebaseAuth } from '../../Firebase/config';
  
 const Signup = () => {
     const navigate = useNavigate();

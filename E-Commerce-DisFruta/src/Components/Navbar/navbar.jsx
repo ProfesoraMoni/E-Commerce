@@ -11,6 +11,7 @@ function Navbar() {
     return (
         <nav className="nav">
             <div className="Logo" id="Logo">
+                <img src={Logo}/>
             </div>
             <ul className={active}>
                 <li className="nav__item"><a href="#" className="nav__link">Inicio</a></li>

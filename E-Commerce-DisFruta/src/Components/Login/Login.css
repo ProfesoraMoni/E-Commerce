@@ -1,0 +1,113 @@
+.Login {
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    display: flex;
+    background-image: url('../../assets/Img/bgl.png');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cover {
+    margin: 20px 30px 50px 10px;
+    background: rgba(255, 255, 255, 0.15);
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(38, 140, 27, 0.37);
+    backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    color: #0c6438;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+.Cover img {
+    width: 30vh;
+    margin: 5px 0 5px 0;
+}
+
+input {
+    display: flex;
+    background: rgba(255, 255, 255, 0.962);
+    box-shadow: 0 8px 32px 0 rgba(38, 140, 27, 0.37);
+    border-radius: 2rem;
+    width: 60%;
+    height: 20%;
+    padding: 10px 60px 10px 20px;
+    border: none;
+    outline: none;
+    color: #3c354e;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+    font-family:'Kalam', cursive;
+
+    &:focus {
+        display: inline-block;
+        box-shadow: 0 0 0 0.2rem #0a4d31;
+        backdrop-filter: blur(12rem);
+        border-radius: 2rem;
+    }
+}
+
+.Cover #email-address {
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #5e8f25, #88BE4C);
+    border-radius: 30px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.3rem 2.5rem;
+    margin: 20px 90px;
+}
+
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .Cover {
+        width: 60%;
+        height: 80vh;
+        display: flex;
+    }
+    input {
+        display: flex;
+        background: rgba(255, 255, 255, 0.962);
+        box-shadow: 0 8px 32px 0 rgba(38, 140, 27, 0.37);
+        border-radius: 1rem;
+        width: 30%;
+        margin-left: 70px;
+        font-size: 15px;
+    }
+
+}

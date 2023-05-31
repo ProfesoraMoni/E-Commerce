@@ -11,6 +11,7 @@ import Login from '../src/Components/Login/Login'
 import Signup from '../src/Components/SignUp/SignUp'
 import { useNavigate, Outlet } from 'react-router-dom';
 
+
 const PrivateRoute = ({element: Element, isAuth, ...rest}) => {
   const navigate = useNavigate()
   

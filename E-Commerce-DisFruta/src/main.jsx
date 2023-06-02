@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
   Navigate,
-  RouterProvider,
+  RouterProvider, useNavigate, Outlet
 } from "react-router-dom";
 import './index.css'
 import Home  from '../src/Components/Home/HomePage'
 import Login from '../src/Components/Login/Login'
 import Signup from '../src/Components/SignUp/SignUp'
-import { useNavigate, Outlet } from 'react-router-dom';
+import Inicio from './Components/Inicio/Inicio'
 
 
 const PrivateRoute = ({element: Element, isAuth, ...rest}) => {
@@ -42,8 +42,13 @@ const router = createBrowserRouter([
       path: "homepage",
       element: <Home/>
     }
+    
    ] 
-  }
+  },
+  {
+    path :"/inicio",
+    element: <Inicio/>
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -5,6 +5,9 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import '../Login/Login.css';
 import Logo from '../../assets/Img/Logo.png';
 import Navbar from '../Navbar/navbar';
+import Footer from '../Footer/Footer';
+import Carrito from '../Carrito';
+import Productos from '../Productos';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -34,62 +37,65 @@ const Login = () => {
     }
 
     return (
-    <>
-        <Navbar />
-        <main className='Login'>
-            <section>
-                <div className='Cover'>
-                    <div className="Logo" id="Logo">
-                        <img src={Logo} />
-                    </div>
-                    <form>
-                        <div>
-                            <label htmlFor="email-address">
-                            </label>
-                            <input
-                                id="email-address"
-                                name="email"
-                                type="email"
-                                required
-                                placeholder="Email address"
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
+        <>
+            <Navbar />
+            <main className='Login'>
+                <section>
+                    <div className='Cover'>
+                        <div className="Logo" id="Logo">
+                            <img src={Logo} />
                         </div>
+                        <form>
+                            <div>
+                                <label htmlFor="email-address">
+                                </label>
+                                <input
+                                    id="email-address"
+                                    name="email"
+                                    type="email"
+                                    required
+                                    placeholder="Email address"
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+                            </div>
 
 
-                        <div>
-                            <label htmlFor="password">
-                            </label>
-                            <input
-                                id="password"
-                                name="password"
-                                type="password"
-                                required
-                                placeholder="Password"
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
-                        </div>
+                            <div>
+                                <label htmlFor="password">
+                                </label>
+                                <input
+                                    id="password"
+                                    name="password"
+                                    type="password"
+                                    required
+                                    placeholder="Password"
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
+                            </div>
 
-                        <div>
-                            <button className="login-btn"
-                                onClick={onLogin}
-                            >
-                                Login
-                            </button>
-                        </div>
-                    </form>
+                            <div>
+                                <button className="login-butn"
+                                    onClick={onLogin}
+                                >
+                                    Login
+                                </button>
+                            </div>
+                            <hr className='hl'></hr>
 
-                    <p className="text-sm text-white text-center">
-                        No account yet? {' '}
-                        <NavLink to="/signup">
+                        </form>
+
+                        <p className="text-sm text-white text-center">
+                            No account yet?
+                            <NavLink to="/signup" className="signup">
                             Sign up
-                        </NavLink>
-                    </p>
+                            </NavLink>
+                        </p>
 
-                </div>
-            </section>
-        </main>
-    </>
+                    </div>
+                </section>
+            </main>
+            <Footer />
+        </>
     )
 }
 

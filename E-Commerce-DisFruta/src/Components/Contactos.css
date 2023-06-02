@@ -1,0 +1,8 @@
+.whatsapp-container{
+    display: flex;
+}
+.whatsapp-container img{
+    width: 30px;
+    height: auto;
+    padding: 0;
+}

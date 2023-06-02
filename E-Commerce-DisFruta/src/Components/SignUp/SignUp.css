@@ -1,4 +1,4 @@
-.Login {
+.SU {
     font-size: 20px;
     font-family: 'Kalam', cursive;
     display: flex;
@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 8px 32px 0 rgba(7, 34, 4, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(38, 140, 27, 0.37);
     backdrop-filter: blur(8.5px);
     border-radius: 10px;
 }
@@ -57,10 +57,10 @@ input {
 
 }
 
-.login-butn {
+button {
     border: none;
     color: #fff;
-    background-image: linear-gradient(30deg, #70cdae, #0d3c1f);
+    background-image: linear-gradient(30deg, #0d3c1f, #1d5633);
     border-radius: 30px;
     background-size: 100% auto;
     font-family: inherit;
@@ -75,12 +75,12 @@ button:hover {
     -webkit-animation: pulse 2s infinite;
     animation: pulse512 1.5s infinite;
 }
-.hl { 
-    width: 80%;
+.h { 
+    width: 60%;
     height: 7px;
     border: 0 none;
     position: relative;
-    background-image: linear-gradient(30deg, #5ac483, #0d3c1f);
+    background-image: linear-gradient(30deg, #0d3c1f, #5ac483);
     display: flex;
 
 }
@@ -89,7 +89,7 @@ p{
     color: #000000;
     display: flex;
 }
-p .signup{
+p .login{
     margin-left: 6px;
     display: flex;
 }
@@ -132,8 +132,8 @@ p .signup{
     p{
         flex-direction: column;
     }
-    p .signup{
-        margin-left: 20px;
+    p .login{
+        margin-left: 60px;
     }
 
 }

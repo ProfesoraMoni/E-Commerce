@@ -1,0 +1,61 @@
+body {
+	margin: 0 auto;
+	max-width: 100%;
+	font-family: 'Lato';
+	color: #333;
+}
+
+.icon-cart {
+	width: 40px;
+	height: 40px;
+	stroke: #000;
+}
+
+.icon-cart:hover {
+	cursor: pointer;
+}
+
+.Carrito {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 40px 0;
+	background-color: #88BE4C;
+	margin: 20px;
+	border-radius: 20px;
+}
+
+.container-icon {
+	position: relative;
+}
+
+.count-products {
+	position: absolute;
+	top: 55%;
+	right: 0;
+
+	background-color: #000;
+	color: #fff;
+	width: 25px;
+	height: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+#contador-productos {
+	font-size: 12px;
+}
+
+.container-cart-products {
+	position: absolute;
+	top: 50px;
+	right: 0;
+
+	background-color: #0da834;
+	width: 400px;
+	z-index: 1;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}

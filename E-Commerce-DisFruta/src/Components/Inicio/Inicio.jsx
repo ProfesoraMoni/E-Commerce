@@ -9,14 +9,14 @@ const Inicio = () => {
         <>
             <Navbar />
             <main className='Inicio'>
-                <section>
-                    <div className='Cover'>
-                        <div className="Logo" id="Logo">
-                            <img src={Logo} />
-                        </div>
-                    <h2>hello</h2>
+                <div className='container1'>
+                    <p>Dis-Fruta</p>
+                    <ul>
+                        <li>la frescura de la naturaleza.</li>
+                        <li>ayudar a los campesinos locales.</li>
+                        <li>hasta el 100% de cada producto.</li>
+                    </ul>
                 </div>
-                </section>
             </main>
             <Footer />
         </>
